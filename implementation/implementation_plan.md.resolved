@@ -1,0 +1,33 @@
+# Minimoog Model D Web App - Implementation Plan
+
+## Goal Description
+Recreate the Minimoog Model D synthesizer as a high-quality web application using the Web Audio API. It needs to include a responsive UI reflecting the hardware, 3 oscillators, a ladder filter, envelopes, and additional features like an 8-step sequencer, delay, reverb, and preset management.
+
+## Proposed Changes
+### Project Initialization
+- Use `Vite` for fast bundling and development.
+- Use Vanilla JS for maximum performance and precise Web Audio API control.
+- Use Vanilla CSS for styling, aiming for a premium, dynamic web design as requested in system prompts.
+
+### Audio Architecture
+- **Oscillators**: 3 custom oscillator modules supporting typical Minimoog waveforms, frequency tuning, and octave range.
+- **Mixer**: Audio nodes to sum the oscillators and noise generators.
+- **Filter**: A 24dB/octave Moog-style ladder filter implementation.
+- **Envelopes**: Custom ADS (Attack, Decay, Sustain - with optional release) envelopes for Filter and Loudness.
+- **Effects**: Delay node and Convolver node (for Reverb).
+
+### UI Architecture
+- **Structure**: A main flex/grid layout to represent the hardware panels.
+- **Components**: Reusable Knob and Switch logic mapped directly to Web Audio API parameters.
+- **Sequencer**: 8-step sequencer UI with velocity per step.
+- **Controls**: Integration for hardware keyboard (`z`/`x` octaves, `Space` play/stop sequencer, `-`/`+` tempo).
+
+## Verification Plan
+### Automated Tests
+- Running the `vite` dev server locally to confirm no build issues.
+
+### Manual Verification
+- Testing the audio engine and sound generation via UI and Keyboard.
+- Adjusting knobs to see if visual/audio responses are linked properly.
+- Verifying Sequencer timing and Preset export formatting.
+- Ensuring mobile experience is optimized and accessible without zooming/scrolling issues.

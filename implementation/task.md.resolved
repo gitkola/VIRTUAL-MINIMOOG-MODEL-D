@@ -1,0 +1,42 @@
+# Minimoog Model D Web App
+
+## 1. Project Setup
+
+- [x] Initialize Vanilla JS / Vite project in `/Users/nick/code/VIRTUAL-MINIMOOG-MODEL-D`
+- [ ] Set up directory structure (audio, ui, utils, styles)
+
+## 2. Core Audio Engine (Web Audio API)
+
+- [x] Implement AudioContext setup
+- [x] Implement Oscillator module (3 oscillators, multiple waveforms, tuning, range)
+- [x] Implement Mixer module (Osc volume, noise, external input)
+- [x] Implement Filter module (Ladder filter implementation, cutoff, emphasis)
+- [x] Implement Modifiers (Loudness contour, Filter contour, ADS envelopes)
+- [x] Implement Modulation and Glide
+- [x] Add Delay effect
+- [x] Add Reverb effect
+
+## 3. UI Development
+
+- [x] Design main layout matching hardware (Oscillator Bank, Mixer, Modifiers, Output)
+- [x] Implement Keyboard UI
+- [x] Add 8-step sequencer UI
+- [x] Implement Knobs, Switches, and routing
+- [x] Ensure mobile responsiveness and styling (Vanilla CSS)
+
+## 4. Hardware/Keyboard Integration
+
+- [x] Map computer keyboard to notes (`z` and `x` for octave decrease/increase)
+- [x] Integrate sequencer playback controls (`Space` = play/stop, `-`/`+` = tempo adjust)
+
+## 5. Preset & Sequence Management
+
+- [x] Implement Save/Load functionality
+- [x] Implement Export to JSON
+- [x] Load default Minimoog patches (from Patch Sheets)
+
+## 6. Verification
+
+- [x] Test sound quality against expected hardware behavior
+- [x] Verify UI on desktop and mobile constraints
+- [x] Test all keyboard shortcuts
